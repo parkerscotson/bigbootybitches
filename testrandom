@@ -1,0 +1,19 @@
+import random
+from datetime import datetime
+
+def randomNumber():
+    random.seed(datetime.now())
+    return random.randint(1,80)
+
+    def getSelection():
+        amount = Input("how many number do want to pick? (2-10)")
+        if type(amount) != "int":
+            print ("you really fucked up")
+            if int(amount) =<2 or int(amount) >10:
+                print("out of bounds")
+                output = []
+                for i in range (0,20):
+                    output.append(randomNumber())
+
+
+getSelection()                    
